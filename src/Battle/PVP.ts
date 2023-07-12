@@ -18,6 +18,10 @@ class PVP extends Battle {
     if (this.player.lifePoints === -1) { 
       return -1; 
     } 
+    return this.continueFight();
+  }
+  
+  continueFight(): number {
     return this.fight();
   }
 }
