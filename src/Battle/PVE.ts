@@ -9,7 +9,7 @@ class PVE extends Battle {
     this._opponents = oponents;
   }
 
-  fight(): number {
+  fight(): number { 
     this.player.attack(this._opponents[0]);
     if (this._opponents[0].lifePoints === -1) {
       this._opponents.splice(0, 1);
