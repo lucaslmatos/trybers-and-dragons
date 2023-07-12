@@ -2,9 +2,9 @@ import Fighter, { SimpleFighter } from '../Fighter';
 import Battle from './Battle';
 
 class PVE extends Battle {
-  private _opponents: Fighter[] | SimpleFighter[];
+  private _opponents: Array<Fighter | SimpleFighter>;
   
-  constructor(player:Fighter, oponents: Fighter[] | SimpleFighter[]) {
+  constructor(player:Fighter, oponents: Array<Fighter | SimpleFighter>) {
     super(player);
     this._opponents = oponents;
   }
