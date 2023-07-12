@@ -12,4 +12,5 @@ interface Fighter {
   receiveDamage(attackPoints:number):number;
 }
 
+export { SimpleFighter };
 export default Fighter;
