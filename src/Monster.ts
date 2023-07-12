@@ -1,6 +1,6 @@
 import { SimpleFighter } from './Fighter';
 
-abstract class Monster implements SimpleFighter {
+class Monster implements SimpleFighter {
   _lifePoints: number;
   private _strength: number;
 
